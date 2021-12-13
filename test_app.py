@@ -20,9 +20,7 @@ class TestHelloApp(unittest.TestCase):
   def test_hello(self):
     self.assertEqual(hello(), "Hello World!\n")
     self.assertEqual(hello("John"), "Hello John!\n")
-    self.assertEqual(hello("John", "Doe"), "Hello John Doe!\n")
-    self.assertEqual(hello("John", "Doe", "Smith"), "Hello John Doe Smith!\n") 
-    self.assertEqual(hello("John", "Doe", "Smith", "III"), "Hello John Doe Smith III!\n")
+  
 if __name__ == '__main__':
   unittest.main()
 
