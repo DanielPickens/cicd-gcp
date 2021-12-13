@@ -15,7 +15,7 @@ from flask import Flask
 app = Flask('hello-cloudbuild')
 
 @app.route('/')
-def hello():
+def hello("John"):
   return "Hello World!\n, Hello John!\n")
 
 if __name__ == '__main__':
