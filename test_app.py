@@ -12,13 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from flask import Flask
-app = Flask('hello-cloudbuild')
+import unittest
+from app import hello
 
-@app.route('/')
-def hello():
-  return "Hello World!\n"
+class TestHelloApp(unittest.TestCase):
+
+  def test_hello(self):
+    self.assertEqual(hello(), "Hello World!\n")
 
 if __name__ == '__main__':
-  app.run(host = '0.0.0.0', port = 8080)
-  
+  unittest.main()
