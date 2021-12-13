@@ -19,7 +19,6 @@ class TestHelloApp(unittest.TestCase):
 
   def test_hello(self):
     self.assertEqual(hello(), "Hello World!\n")
-    self.assertEqual(hello("John"), "Hello John!\n")
   
 if __name__ == '__main__':
   unittest.main()
