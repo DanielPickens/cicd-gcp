@@ -1,2 +1,5 @@
 # cicd-gcp
-ci/cd test run for GCP , GKE manifest for CD, and using Cloud Build triggers for CI
+ci/cd for  GCP, 
+ - Cloud Build triggers for CI 
+ -  Artifact Registry for assigned Docker repository named my-repository in the us-central1 region to store container images
+ -  GKE cluster that  is in use to deploy the application
